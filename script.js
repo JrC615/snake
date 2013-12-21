@@ -7,7 +7,7 @@ var gameSpeed=100;
 var roundNum = 1;
 
 var eatenItemsCount =0;
-var MAX_FOOD_ITEMS = 12;
+var MAX_FOOD_ITEMS = 5;
 
 //actual field size(400px) divided by corresponding bodypart size(8px)
 var gameFieldRelativeWidth = 50;
@@ -68,7 +68,7 @@ function keyPressedHandler(e) {
 
 function startGame() {
 	gameBoard = new GameBoard();
-	moveDirection = 'right';
+	moveDirection = 'up';
 	eatenItemsCount = 0;
 	roundNum = 1;
 	gameSpeed=100;
